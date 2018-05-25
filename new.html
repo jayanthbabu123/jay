@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,16 +13,20 @@
         .panel-body {
             box-shadow: none;
         }
-        .p-lr-none{
+
+        .p-lr-none {
             padding-left: 0;
             padding-right: 0;
         }
+
         .default-border-b {
             border-bottom: 1px solid #ddd;
         }
+
         .collapsed-title {
             font-size: 17px;
         }
+
         .panel-group .panel-heading {
             padding: 0;
         }
@@ -112,13 +115,14 @@
             border-bottom-right-radius: 50%;
         }
 
-        .panel-default>.panel-heading {
+        .panel-default > .panel-heading {
             color: #333;
             background-color: white;
             padding: 6px !important;
             border-color: #ddd;
         }
-        .scan-details{
+
+        .scan-details {
             max-height: 400px;
             overflow: auto;
         }
@@ -140,7 +144,8 @@
                                 <strong>
                                     <i class="fa fa-car"></i> Distance</strong>
                             </label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="with in 20 miles of" />
+                            <input type="email" class="form-control" id="inputEmail4"
+                                   placeholder="with in 20 miles of"/>
                         </div>
                         <div class="form-group col-md-4">
                             <label>
@@ -148,7 +153,7 @@
                                     <i class="fa fa-map-marker" aria-hidden="true"></i> Enter Zip
                                 </strong>
                             </label>
-                            <input type="password" class="form-control" id="inputPassword4" placeholder="32323" />
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="32323"/>
                         </div>
                     </div>
                 </div>
@@ -160,7 +165,8 @@
             <div class="col-md-8">
                 <div class="description">
                     <p>we have over a 1000 procedures available from which to select. In most cases this will represent
-                        the national average cost. In some cases exact cost will be available, as shown by $ Additionally
+                        the national average cost. In some cases exact cost will be available, as shown by $
+                        Additionally
                         some procedures involves multiple steps,indicated by (additional help seen in legend)
                     </p>
                 </div>
@@ -171,13 +177,13 @@
                                 <strong>
                                     <i class="fa fa-user" aria-hidden="true"></i> Select Member</strong>
                             </label>
-                            <input type="email" class="form-control" placeholder="Terry Sheppard" />
+                            <input type="email" class="form-control" placeholder="Terry Sheppard"/>
                         </div>
                         <div class="form-group col-md-6 pr-none">
                             <label>
                                 <strong>Search healthcare service within below categories</strong>
                             </label>
-                            <input type="password" class="form-control" placeholder="" />
+                            <input type="password" class="form-control" placeholder=""/>
                         </div>
                         <div class="col-md-2 search-button">
                             <button class="btn btn-primary">Search</button>
@@ -187,7 +193,7 @@
                 <div class="col-md-12 padding-none">
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" value="" />I have procedure and diagnosis code
+                            <input type="checkbox" value=""/>I have procedure and diagnosis code
                             <i class="fa fa-question-circle text-primary" aria-hidden="true"></i>
                         </label>
                     </div>
@@ -211,7 +217,8 @@
                         <button class="btn btn-default rounded-button offset-bottom-10">$</button>
                     </div>
 
-                    <p>Majority will represent the national average, your exact cost(if available) is shown with a ($icon)
+                    <p>Majority will represent the national average, your exact cost(if available) is shown with a
+                        ($icon)
                     </p>
                 </div>
                 <div class="panel-body default-border">
@@ -260,7 +267,7 @@
             {
                 mainCategoryId: "1003",
                 categoryName: "Surgery(Impatient/Outpatient)",
-                categoryDisplayName: "Labs"
+                categoryDisplayName: "Surgery(Impatient/Outpatient)"
             },
             {
                 mainCategoryId: "1004",
@@ -274,13 +281,107 @@
             }
         ]
     };
-    response.mainCategories =response.mainCategories.sort(function (a,b) {
-        return a.mainCategoryId-b.mainCategoryId
+    var categories = {
+        responseCode: "000",
+        responseDescription: "SUCCESS",
+        subCategories: [
+            {
+                mlpCode: null,
+                SubCategoryCode: null,
+                TreatmentCategoryCode: '09401',
+                ValidationTransaction: null,
+                ValidationTypeCode: null,
+                SubCategoryId: "2839",
+                PrntSubcategoryId: "2436",
+                MainCategoryId: "1001",
+                SubcategoryName: "CT Abdomen & Pelvis",
+                SubcategoryType: "bundle",
+                SubDisplayName: "CAT scan, Abdomen and pelvis",
+                ChildExsIndicator: "N",
+                SubCategoryStatusCode: "Active"
+            }, {
+
+                mlpCode: null,
+                SubCategoryCode: null,
+                TreatmentCategoryCode: "09403",
+                ValidationTransaction: null,
+                ValidationTypeCode: null,
+                SubCategoryId: "2843",
+                PrntSubcategoryId: "2436",
+                MainCategoryId: "1001",
+                SubcategoryName: "CT Abdomen & Pelvis",
+                SubcategoryType: "bundle",
+                SubDisplayName: "CAT scan, Abdomen and pelvis",
+                ChildExsIndicator: "N",
+                SubCategoryStatusCode: "Active"
+            }, {
+                mlpCode: null,
+                SubCategoryCode: null,
+                TreatmentCategoryCode: '09404',
+                ValidationTransaction: null,
+                ValidationTypeCode: null,
+                SubCategoryId: "2845",
+                PrntSubcategoryId: "2436",
+                MainCategoryId: "1001",
+                SubcategoryName: "CT Abdomen & Pelvis witout and with contrast",
+                SubcategoryType: "bundle",
+                SubDisplayName: "CAT scan(without and with contrast), Abdomen and pelvis",
+                ChildExsIndicator: "N",
+                SubCategoryStatusCode: "Active"
+            }, {
+
+                mlpCode: null,
+                SubCategoryCode: null,
+                TreatmentCategoryCode: "09402",
+                ValidationTransaction: null,
+                ValidationTypeCode: null,
+                SubCategoryId: "2841",
+                PrntSubcategoryId: "2436",
+                MainCategoryId: "1001",
+                SubcategoryName: "CT Abdomen & Pelvis without contrast",
+                SubcategoryType: "bundle",
+                SubDisplayName: "CAT scan(without contrast), Abdomen and pelvis",
+                ChildExsIndicator: "N",
+                SubCategoryStatusCode: "Active"
+            }, {
+                mlpCode: null,
+                SubCategoryCode: null,
+                TreatmentCategoryCode: '09001',
+                ValidationTransaction: null,
+                ValidationTypeCode: null,
+                SubCategoryId: "2833",
+                PrntSubcategoryId: "2436",
+                MainCategoryId: "1001",
+                SubcategoryName: "CT Angiography",
+                SubcategoryType: "bundle",
+                SubDisplayName: "CT Angiography",
+                ChildExsIndicator: "N",
+                SubCategoryStatusCode: "InActive"
+            }, {
+
+                mlpCode: null,
+                SubCategoryCode: null,
+                TreatmentCategoryCode: "09002",
+                ValidationTransaction: null,
+                ValidationTypeCode: null,
+                SubCategoryId: "2836",
+                PrntSubcategoryId: "2436",
+                MainCategoryId: "1001",
+                SubcategoryName: "CT Angiography,Abdomen without and with contrast",
+                SubcategoryType: "bundle",
+                SubDisplayName: "CT Angiography,Abdomen",
+                ChildExsIndicator: "N",
+                SubCategoryStatusCode: "Active"
+            }
+        ]
+    }
+    response.mainCategories = response.mainCategories.sort(function (a, b) {
+        return a.mainCategoryId - b.mainCategoryId
     });
     response.mainCategories.forEach(function (value, index) {
         var css = index === 0 ? " in" : "";
-        var isOpen = index === 0 ;
-        var collapsed = index ===0 ? "":"collapsed"
+        var isOpen = index === 0;
+        var collapsed = index === 0 ? "" : "collapsed"
         var accordian = '<div class="panel panel-default">' +
             '<div class="panel-heading" role="tab" id="headingTwo' + index + '">' +
             '<h4 class="panel-title">' +
@@ -290,49 +391,49 @@
             '</a></h4></div>' +
             '<div id="collapseOpenTwo' + index + '" class="panel-collapse collapse ' + css + ' " role="tabpanel" aria-labelledby="headingTwo' + index + '">' +
             '<div class="panel-body text-justify scan-details">' +
-            '<div class="col-md-3">'+
-            '<div class="panel-body default-border"> Stomach </div>'+
-            '<div class="panel-body default-border"> Ankle </div>'+
-            '<div class="panel-body default-border"> Arm </div>'+
-            '<div class="panel-body default-border"> Back </div>'+
-            '<div class="panel-body default-border"> Breast </div>'+
-            '<div class="panel-body default-border"> Chest </div>'+
-            '<div class="panel-body default-border"> Entire body </div>'+
-            '<div class="panel-body default-border"> Foot </div>'+
-            '<div class="panel-body default-border"> Head </div>'+
-            '<div class="panel-body default-border"> Hip </div>'+
-            '<div class="panel-body default-border"> Leg </div>'+
-            '<div class="panel-body default-border"> Lungs </div>'+
-            '<div class="panel-body default-border"> Neck </div>'+
-            '<div class="panel-body default-border"> Pelvis </div>'+
-            '<div class="panel-body default-border"> Spine </div>'+
-            '</div>'+
-            '<div class="col-md-9 p-lr-none ">'+
-            '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title"> CAT Scan(Contrast),Abdomen and Pelvis </a> </div>'+
-            '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title"> CAT Scan(without and with Contrast),Abdomen</a> </div>'+
-            '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title col-md-9 p-lr-none"> CAT Scan(without and with Contrast),Abdomen and Pelvis </a>'+
-        '<div class="btn-group col-md-3">\n' +
-        ' <button type="button" class="btn btn-success offset-bottom-10 custom-buttons">Exact</button>\n' +
-        ' <button class="btn btn-default rounded-button offset-bottom-10">$</button>\n' +
-        ' </div>' +
-            '</div>'+
-            '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title"> CAT Scan(without Contrast),Abdomen </a> </div>'+
-            '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title"> CAT Scan(without Contrast),Abdomen and Pelvis </a> </div>'+
+            '<div class="col-md-3">' +
+            '<div class="panel-body default-border"> Stomach </div>' +
+            '<div class="panel-body default-border"> Ankle </div>' +
+            '<div class="panel-body default-border"> Arm </div>' +
+            '<div class="panel-body default-border"> Back </div>' +
+            '<div class="panel-body default-border"> Breast </div>' +
+            '<div class="panel-body default-border"> Chest </div>' +
+            '<div class="panel-body default-border"> Entire body </div>' +
+            '<div class="panel-body default-border"> Foot </div>' +
+            '<div class="panel-body default-border"> Head </div>' +
+            '<div class="panel-body default-border"> Hip </div>' +
+            '<div class="panel-body default-border"> Leg </div>' +
+            '<div class="panel-body default-border"> Lungs </div>' +
+            '<div class="panel-body default-border"> Neck </div>' +
+            '<div class="panel-body default-border"> Pelvis </div>' +
+            '<div class="panel-body default-border"> Spine </div>' +
+            '</div>' +
+            '<div class="col-md-9 p-lr-none ">' +
+            '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title"> CAT Scan(Contrast),Abdomen and Pelvis </a> </div>' +
+            '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title"> CAT Scan(without and with Contrast),Abdomen</a> </div>' +
+            '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title col-md-9 p-lr-none"> CAT Scan(without and with Contrast),Abdomen and Pelvis </a>' +
+            '<div class="btn-group col-md-3">\n' +
+            ' <button type="button" class="btn btn-success offset-bottom-10 custom-buttons">Exact</button>\n' +
+            ' <button class="btn btn-default rounded-button offset-bottom-10">$</button>\n' +
+            ' </div>' +
+            '</div>' +
+            '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title"> CAT Scan(without Contrast),Abdomen </a> </div>' +
+            '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title"> CAT Scan(without Contrast),Abdomen and Pelvis </a> </div>' +
             '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title col-md-7 p-lr-none"> CAT Scan(without Contrast),Abdomen  </a> ' +
             ' <div class="btn-group col-md-5 ">' +
             ' <button type="button" class="btn btn-success offset-bottom-10 custom-buttons">Exact</button>' +
             ' <button class="btn btn-default rounded-button offset-bottom-10" style="margin-right: 5px">$</button>' +
-            '<button type="button" class="btn btn-secondary offset-bottom-10" >Steps</button>'+
-            '<button class="btn btn-default rounded-button offset-bottom-10">'+
-            '<i class="fa fa-bars" aria-hidden="true"></i></button>'+
+            '<button type="button" class="btn btn-secondary offset-bottom-10" >Steps</button>' +
+            '<button class="btn btn-default rounded-button offset-bottom-10">' +
+            '<i class="fa fa-bars" aria-hidden="true"></i></button>' +
             ' </div>' +
-            '</div>'+
-            '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title"> CAT Scan,Abdomen </a> </div>'+
-            '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title"> CAT Scan,Abdomen and Pelvis </a> </div>'+
-            '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title"> CT Aniography,Abdomen </a> </div>'+
-            '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title">Doppler Ultrasound,Umbilical Artery </a> </div>'+
-            '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title"> Doppler Ultrasound(follow up exam)  </a> </div>'+
-            '</div>'+
+            '</div>' +
+            '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title"> CAT Scan,Abdomen </a> </div>' +
+            '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title"> CAT Scan,Abdomen and Pelvis </a> </div>' +
+            '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title"> CT Aniography,Abdomen </a> </div>' +
+            '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title">Doppler Ultrasound,Umbilical Artery </a> </div>' +
+            '<div class="panel-body default-border-b p-lr-none"> <a class="collapsed-title"> Doppler Ultrasound(follow up exam)  </a> </div>' +
+            '</div>' +
             '</div></div></div>';
         $("#accordionGroupOpen").append(accordian);
     })
