@@ -1,44 +1,48 @@
 <style>
 
-    .description {
-        margin: 1em auto 2.25em;
-    }
-    h1 {
+
+    .custom-accordion h1 {
         font-family: 'Pacifico', cursive;
         font-weight: 400;
         font-size: 2.5em;
     }
-    ul {
+    .custom-accordion ul {
         list-style: none;
         padding: 0;
     }
-    ul .inner {
+    .custom-accordion ul .inner {
         padding-left: 1em;
         overflow: hidden;
         display: none;
     }
-    ul .inner.show {
+    .custom-accordion ul .inner.show {
         /*display: block;*/
     }
-    ul li {
+    .custom-accordion ul li {
         margin: .5em 0;
     }
-    ul li a.toggle {
+    .custom-accordion ul li a.toggle {
         width: 100%;
         display: block;
-        background: rgba(0, 0, 0, 0.78);
-        color: #fefefe;
+        color: blue;
         padding: .75em;
+        border-bottom: 1px solid #ddd;
         border-radius: 0.15em;
         transition: background .3s ease;
     }
-    ul li a.toggle:hover {
-        background: rgba(0, 0, 0, 0.9);
+    .custom-accordion .panel-body{
+        padding:15px;
+    }
+    .default-border{
+        border: 1px solid #ddd;
+    }
+    .default-border-b{
+        border-bottom: 1px solid #ddd;
     }
 
 </style>
 
-<div class="accordion" id="accordionGroupOpen">
+<div class="custom-accordion" id="accordionGroupOpen">
 
 
 </div>
@@ -209,9 +213,9 @@
            '        <li>\n' +
            '            <a class="toggle" href="javascript:void(0);">'+ value.categoryDisplayName+'</a>'+
            '            <ul class="inner">\n' +
-           '<div class="col-md-3">' +
+           '<div class="medium-3 columns">' +
            sideMenu +
-           '</div> <div class="col-md-9 p-lr-none ">' +
+           '</div> <div class="medium-9 columns ">' +
            sideContent +
            '</div>' +
            '            </ul>\n' +
