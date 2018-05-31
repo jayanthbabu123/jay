@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f2963d8-5fe6-4b45-b2b7-80e982f70af0" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accordian.html" beforeDir="false" afterPath="$PROJECT_DIR$/accordian.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +21,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
+            <state relative-caret-position="482">
+              <caret line="38" column="9" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="38" selection-end-column="9" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -50,23 +51,53 @@
       <file leaf-file-name="new.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="866">
-              <caret line="199" column="68" lean-forward="true" selection-start-line="199" selection-start-column="45" selection-end-line="199" selection-end-column="68" />
+            <state relative-caret-position="293">
+              <caret line="53" selection-start-line="41" selection-start-column="8" selection-end-line="53" />
               <folding>
-                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
                 <element signature="n#script#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="accordian.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="accordian.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/accordian.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+            <state relative-caret-position="357">
+              <caret line="227" column="51" lean-forward="true" selection-start-line="227" selection-start-column="7" selection-end-line="227" selection-end-column="51" />
               <folding>
-                <element signature="e#5909#9594#0" />
+                <element signature="e#46#147#0" />
+                <element signature="e#1231#2617#0" />
+                <element signature="e#2640#6425#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1854">
+              <caret line="264" column="9" lean-forward="true" selection-start-line="264" selection-start-column="9" selection-end-line="264" selection-end-column="9" />
+              <folding>
+                <element signature="e#1197#2583#0" />
+                <element signature="e#2606#6391#0" />
+                <element signature="e#2700#6385#0" />
+                <element signature="e#6905#8237#0" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="text.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/text.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+              <folding>
+                <element signature="e#2547#3933#0" />
+                <element signature="e#3956#7741#0" />
               </folding>
             </state>
           </provider>
@@ -100,7 +131,9 @@
       <list>
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/new.html" />
+        <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/accordian.html" />
+        <option value="$PROJECT_DIR$/text.html" />
       </list>
     </option>
   </component>
@@ -175,7 +208,7 @@
       <workItem from="1527243635744" duration="4001000" />
       <workItem from="1527500741247" duration="584000" />
       <workItem from="1527569820937" duration="598000" />
-      <workItem from="1527691485387" duration="4835000" />
+      <workItem from="1527691485387" duration="17363000" />
     </task>
     <task id="LOCAL-00001" summary="third">
       <created>1527145207026</created>
@@ -219,11 +252,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527701757771</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="sixth123">
+      <created>1527702004444</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1527702004444</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26896000" />
+    <option name="totallyTimeSpent" value="39424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -261,7 +301,13 @@
     <MESSAGE value="sixth" />
     <MESSAGE value="sixth1" />
     <MESSAGE value="sixth12" />
-    <option name="LAST_COMMIT_MESSAGE" value="sixth12" />
+    <MESSAGE value="sixth123" />
+    <option name="LAST_COMMIT_MESSAGE" value="sixth123" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -297,7 +343,6 @@
         <state relative-caret-position="6817">
           <caret line="401" column="51" selection-start-line="401" selection-start-column="51" selection-end-line="401" selection-end-column="51" />
           <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
             <element signature="n#script#0;n#html#0;n#!!top" />
           </folding>
         </state>
@@ -481,8 +526,8 @@
     <entry file="file://$PROJECT_DIR$/new.html___jb_tmp___" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
+        <state relative-caret-position="482">
+          <caret line="38" column="9" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="38" selection-end-column="9" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -507,12 +552,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1854">
+          <caret line="264" column="9" lean-forward="true" selection-start-line="264" selection-start-column="9" selection-end-line="264" selection-end-column="9" />
+          <folding>
+            <element signature="e#1197#2583#0" />
+            <element signature="e#2606#6391#0" />
+            <element signature="e#2700#6385#0" />
+            <element signature="e#6905#8237#0" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/new.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="866">
-          <caret line="199" column="68" lean-forward="true" selection-start-line="199" selection-start-column="45" selection-end-line="199" selection-end-column="68" />
+        <state relative-caret-position="293">
+          <caret line="53" selection-start-line="41" selection-start-column="8" selection-end-line="53" />
           <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
             <element signature="n#script#0;n#html#0;n#!!top" />
           </folding>
         </state>
@@ -520,10 +578,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/accordian.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+        <state relative-caret-position="357">
+          <caret line="227" column="51" lean-forward="true" selection-start-line="227" selection-start-column="7" selection-end-line="227" selection-end-column="51" />
           <folding>
-            <element signature="e#5909#9594#0" />
+            <element signature="e#46#147#0" />
+            <element signature="e#1231#2617#0" />
+            <element signature="e#2640#6425#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+          <folding>
+            <element signature="e#2547#3933#0" />
+            <element signature="e#3956#7741#0" />
           </folding>
         </state>
       </provider>
